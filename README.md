@@ -23,6 +23,44 @@ Fetch all available books in the library.
 
 Users can submit reviews and ratings for books.
 
+Modeling Strategy
+This project follows a relational database design using Django ORM. Below is an overview of the key models:
+
+1️⃣ AdminUser Model
+Extends AbstractUser, making email the primary identifier instead of username.
+
+Uses a custom AdminUserManager for user creation.
+
+Implements groups and user_permissions for role-based access control.
+
+2️⃣ BookGenre Model
+Stores different book categories (e.g., "Computer Science", "History").
+
+Has a one-to-many relationship with the Book model.
+
+3️⃣ Book Model
+Represents a book with fields like title, author, edition, published_date, and genre.
+
+A foreign key (genre) links each book to its respective genre.
+
+Uses cascade deletion, meaning deleting a genre removes all its associated books.
+
+4️⃣ BookReview Model
+Stores student reviews and ratings for books.
+
+A foreign key (book) links reviews to a book.
+
+A foreign key (student) links reviews to students.
+
+Uses created_at to timestamp the review.
+
+5️⃣ StudentFeedback Model
+Allows students to provide general feedback about the library system.
+
+A foreign key (student) associates feedback with the user.
+
+Uses created_at for tracking when the feedback was submitted
+
 ## API Endpoints
 
 ## 1. Admin Creation
