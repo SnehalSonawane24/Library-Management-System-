@@ -64,16 +64,16 @@ Uses created_at for tracking when the feedback was submitted
 ## API Endpoints
 
 ## 1. Admin Creation
-# Method
+### Method
   POST
-# Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/admin/signup/
-# Payload
+### Payload
   {
       "email": "snehal@gmail.com",
       "password": "snehal@123"
   }
-# Response
+### Response
   {
       "success": true,
       "message": "Admin registered successfully.",
@@ -89,16 +89,16 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 2. Admin Login
-## Method
+### Method
   POST
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/admin/login/
-## Payload
+### Payload
   {
       "email": "snehal@gmail.com",
       "password": "testpassword"
   }
-## Response
+### Response
   {
       "success": true,
       "message": "Login successful.",
@@ -113,15 +113,15 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 3. Book Genre Creation 
-## Method 
+### Method 
   POST
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/book-genres/
-## Payload
+### Payload
   {
       "name": "Computer Science"
   }
-## Response
+### Response
   {
       "success": true,
       "message": "Book genre added successfully",
@@ -137,11 +137,11 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 4. Book Creation
-## Method 
+### Method 
   POST
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/books/
-## Payload
+### Payload
   {
       "title": "Python Basics",
       "author": "John Doe",
@@ -149,7 +149,7 @@ Uses created_at for tracking when the feedback was submitted
       "edition": "3rd Edition",
       "published_date": "2023-01-15"
   }
-## Response
+### Response
   {
       "success": true,
       "message": "Book added successfully",
@@ -169,11 +169,11 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 5.Book Retrieve
-## Method
+### Method
   GET
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/books/
-## Response
+### Response
   {
       "success": true,
       "message": "Books retrieved successfully",
@@ -203,11 +203,11 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 6.Update Book
-## Method 
+### Method 
   PUT
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/books/<int:book_id>/
-## Payload
+### Payload
   {
       "title": "Advance Programming",
       "author": "Harish Narula",
@@ -215,7 +215,7 @@ Uses created_at for tracking when the feedback was submitted
       "edition": "1st Edition",
       "published_date": "2025-01-15"
   }
-## Response
+### Response
   {
       "success": true,
       "message": "Book updated successfully",
@@ -235,11 +235,11 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 7. Delete Book
-## Method
+### Method
   DELETE
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/books/<int:book_id>/
-## Response
+### Response
   {
       "success": true,
       "message": "Book deleted successfully",
@@ -252,18 +252,18 @@ Uses created_at for tracking when the feedback was submitted
   }
 
 ## 8. Add Book Review
-## Method
+### Method
   POST
-## Endpoint
+### Endpoint
   http://127.0.0.1:8000/api/book-reviews/
-## Payload
+### Payload
   {
       "book": 2,
       "review_text": "This book is very helpful!",
       "rating": 5,
       "student": 1
   }
-## Response
+### Response
   {
       "success": true,
       "message": "Review added successfully.",
