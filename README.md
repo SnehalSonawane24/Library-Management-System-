@@ -1,4 +1,29 @@
-﻿# Library-Management-System-
+﻿# Library-Management-System
+# Description
+This Django-based Library Management System provides APIs for managing books, book genres, and book reviews. It includes user authentication for admins and CRUD operations for books.
+
+# Features
+## Admin Authentication
+
+Admins can sign up and log in to manage the system.
+
+## Book Genre Management
+
+Create book genres to categorize books.
+
+## Book Management
+
+Add, update, retrieve, and delete books in the system.
+
+## Book Retrieval
+
+Fetch all available books in the library.
+
+## Book Reviews
+
+Users can submit reviews and ratings for books.
+
+## API Endpoints
 
 ## 1. Admin Creation
 # Method
