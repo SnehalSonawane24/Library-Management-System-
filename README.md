@@ -66,7 +66,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 1. Admin Creation
 # Method
   POST
-# URL
+# Endpoint
   http://127.0.0.1:8000/api/admin/signup/
 # Payload
   {
@@ -91,7 +91,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 2. Admin Login
 ## Method
   POST
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/admin/login/
 ## Payload
   {
@@ -115,7 +115,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 3. Book Genre Creation 
 ## Method 
   POST
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/book-genres/
 ## Payload
   {
@@ -139,7 +139,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 4. Book Creation
 ## Method 
   POST
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/books/
 ## Payload
   {
@@ -171,7 +171,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 5.Book Retrieve
 ## Method
   GET
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/books/
 ## Response
   {
@@ -205,7 +205,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 6.Update Book
 ## Method 
   PUT
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/books/<int:book_id>/
 ## Payload
   {
@@ -237,7 +237,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 7. Delete Book
 ## Method
   DELETE
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/books/<int:book_id>/
 ## Response
   {
@@ -254,7 +254,7 @@ Uses created_at for tracking when the feedback was submitted
 ## 8. Add Book Review
 ## Method
   POST
-## URL
+## Endpoint
   http://127.0.0.1:8000/api/book-reviews/
 ## Payload
   {
