@@ -1,16 +1,16 @@
 ﻿# Library-Management-System-
 
 ## 1. Admin Creation
-## Method
+# Method
   POST
-## URL
+# URL
   http://127.0.0.1:8000/api/admin/signup/
-## Payload
+# Payload
   {
       "email": "snehal@gmail.com",
       "password": "snehal@123"
   }
-## Response
+# Response
   {
       "success": true,
       "message": "Admin registered successfully.",
